@@ -22,3 +22,14 @@ release:
 	cargo build --release
 
 all: format lint test run
+
+help: 
+	@echo "Available commands:"
+	@echo "  make rust-version  - Show Rust tool versions"
+	@echo "  make format        - Format the code"
+	@echo "  make lint          - Lint the code"
+	@echo "  make test          - Run tests"
+	@echo "  make run           - Run the application"
+	@echo "  make release       - Build the application in release mode"
+	@echo "  make all           - Run format, lint, test, and run"
+	@echo "  make help          - Show this help message"
